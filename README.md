@@ -1,4 +1,4 @@
-# Bitshares websocket interface (gxbjs-ws)
+# GXChain websocket interface (gxbjs-ws)
 
 Pure JavaScript GXChain websocket library for node.js and browsers. Can be used to easily connect to and obtain data from the GXB blockchain via public apis or local nodes.
 
