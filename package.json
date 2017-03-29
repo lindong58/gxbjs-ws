@@ -1,6 +1,6 @@
 {
   "name": "gxbjs-ws",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Pure JavaScript GXB websocket interface for node.js and browsers.",
   "browser": {
     "ws": false
@@ -15,7 +15,7 @@
     "build-es": "BABEL_ENV=es babel ./lib -d es",
     "postbuild": "npm run browserify && npm run build-es",
     "prepublish": "npm run build",
-    "browserify": "NODE_ENV=production browserify cjs/src/ApiInstances.js --standalone bitshares_ws -o build/gxbjs-ws.js -d",
+    "browserify": "NODE_ENV=production browserify cjs/src/ApiInstances.js --standalone gxbjs_ws -o build/gxbjs-ws.js -d",
     "postbrowserify": "NODE_ENV=production uglifyjs --compress --mangle --sequences --drop_console --mangle-props --screw-ie8 --output build/gxbjs-ws.min.js -- build/gxbjs-ws.js",
     "bundle": "npm run browserify && npm run minify"
   },
