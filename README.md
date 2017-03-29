@@ -2,7 +2,7 @@
 
 Pure JavaScript GXChain websocket library for node.js and browsers. Can be used to easily connect to and obtain data from the GXB blockchain via public apis or local nodes.
 
-Credit for the original implementation goes to [DavidLan](https://github.com/lanhaoxiang).
+Credit for the original implementation goes to [jcalfee](https://github.com/jcalfee).
 
 [![npm version](https://img.shields.io/npm/v/gxbjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/gxbjs-ws)
 [![npm downloads](https://img.shields.io/npm/dm/gxbjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/gxbjs-ws)

@@ -1,6 +1,6 @@
 {
   "name": "gxbjs-ws",
-  "version": "1.1.5",
+  "version": "1.1.8",
   "description": "Pure JavaScript GXB websocket interface for node.js and browsers.",
   "browser": {
     "ws": false
@@ -21,10 +21,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitshares/bitsharesjs-ws.git"
+    "url": "git+https://github.com/gxchain/gxbjs-ws.git"
   },
   "author": "David Lan <lanhaoxiang@qq.com> (https://github.com/lanhaoxiang)",
   "contributors": [
+    "James Calfee <james@jcalfee.info> (https://github.com/jcalfee/)",
     "David Lan <lanhaoxiang@qq.com> (https://github.com/lanhaoxiang/)"
   ],
   "license": "BSD-2-Clause-FreeBSD",
