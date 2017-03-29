@@ -1,18 +1,18 @@
-# Bitshares websocket interface (bitsharesjs-ws)
+# Bitshares websocket interface (gxbjs-ws)
 
-Pure JavaScript Bitshares websocket library for node.js and browsers. Can be used to easily connect to and obtain data from the Bitshares blockchain via public apis or local nodes.
+Pure JavaScript GXChain websocket library for node.js and browsers. Can be used to easily connect to and obtain data from the GXB blockchain via public apis or local nodes.
 
-Credit for the original implementation goes to [jcalfeee](https://github.com/jcalfee).
+Credit for the original implementation goes to [DavidLan](https://github.com/lanhaoxiang).
 
-[![npm version](https://img.shields.io/npm/v/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs-ws)
-[![npm downloads](https://img.shields.io/npm/dm/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs-ws)
+[![npm version](https://img.shields.io/npm/v/gxbjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/gxbjs-ws)
+[![npm downloads](https://img.shields.io/npm/dm/gxbjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/gxbjs-ws)
 
 
 ## Setup
 
 This library can be obtained through npm:
 ```
-npm install bitsharesjs-ws
+npm install gxbjs-ws
 ```
 
 ## Usage
@@ -20,15 +20,15 @@ npm install bitsharesjs-ws
 Browser bundles are provided in /build/, for testing purposes you can access this from rawgit:
 
 ```
-<script type="text/javascript" src="https://cdn.rawgit.com/bitshares/bitsharesjs-ws/build/bitsharesjs-ws.js" />
+<script type="text/javascript" src="https://cdn.rawgit.com/gxchain/gxbjs-ws/build/gxbjs-ws.js" />
 ```
 
-A variable bitshares_ws will be available in window.
+A variable gxbjs_ws will be available in window.
 
 For use in a webpack/browserify context, see the example below for how to open a websocket connection to the Openledger API and subscribe to any object updates:
 
 ```
-var {Apis} = require("bitsharesjs-ws");
+var {Apis} = require("gxbjs-ws");
 Apis.instance("wss://bitshares.openledger.info/ws").init_promise.then((res) => {
     console.log("connected to:", res[0].network);
     Apis.instance().db_api().exec( "set_subscribe_callback", [ updateListener, true ] )
