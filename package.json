@@ -1,6 +1,6 @@
 {
   "name": "gxbjs-ws",
-  "version": "1.1.15",
+  "version": "1.1.17",
   "description": "Pure JavaScript GXB websocket interface for node.js and browsers.",
   "browser": {
     "ws": false
