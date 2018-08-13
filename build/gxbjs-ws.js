@@ -180,20 +180,20 @@ exports.__esModule = true;
 var _this = void 0;
 
 var ecc_config = {
-    address_prefix: "GXC"
+    address_prefix: "RED"
 };
 
 _this = {
-    core_asset: "GXC",
-    address_prefix: "GXC",
+    core_asset: "RED",
+    address_prefix: "RED",
     expire_in_secs: 15,
     expire_in_secs_proposal: 24 * 60 * 60,
     review_in_secs_committee: 24 * 60 * 60,
     networks: {
         GXC: {
-            core_asset: "GXC",
-            address_prefix: "GXC",
-            chain_id: "4f7d07969c446f8342033acb3ab2ae5044cbe0fde93db02de75bd17fa8fd84b8"
+            core_asset: "RED",
+            address_prefix: "RED",
+            chain_id: "63563009f2001d2f8bf7425c45e8e27e01a6e6f969a188bb716ee5389f9b9297"
         }
     },
 
@@ -236,9 +236,9 @@ _this = {
     },
 
     reset: function reset() {
-        _this.core_asset = "GXC";
-        _this.address_prefix = "GXC";
-        ecc_config.address_prefix = "GXC";
+        _this.core_asset = "RED";
+        _this.address_prefix = "RED";
+        ecc_config.address_prefix = "RED";
         _this.expire_in_secs = 15;
         _this.expire_in_secs_proposal = 24 * 60 * 60;
 
@@ -246,7 +246,7 @@ _this = {
     },
 
     setPrefix: function setPrefix() {
-        var prefix = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "GXC";
+        var prefix = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "RED";
 
         _this.address_prefix = prefix;
         ecc_config.address_prefix = prefix;
